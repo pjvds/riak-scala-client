@@ -1,8 +1,8 @@
-
 ## What is this?
 
 An easy to use, non-blocking Scala client library for interacting with [Riak].
 
+[![Wercker status](https://app.wercker.com/status/62a2f22987ac2aafcd44c17b4416b8d4/m)](https://app.wercker.com/project/bykey/62a2f22987ac2aafcd44c17b4416b8d4)
 
 ## Current Status: 0.8.0 released!
 
