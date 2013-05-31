@@ -16,3 +16,8 @@ build:
     - script:
         name: start riak
         code: sudo riak start
+    - script:
+        name: test
+        code: |-
+           cd $WERCKER_SOURCE_DIR
+           sbt test
