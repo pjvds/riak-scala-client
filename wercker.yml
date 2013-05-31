@@ -14,6 +14,9 @@ build:
           sudo apt-get update
           sudo apt-get install riak
     - script:
+        name: start riak
+        code: riak start
+    - script:
         name: test
         code: |-
           cd $WERCKER_SOURCE_DIR
