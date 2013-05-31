@@ -15,7 +15,7 @@ build:
           sudo apt-get install riak
     - script:
         name: start riak
-        code: riak start
+        code: sudo riak start
     - script:
         name: test
         code: |-
