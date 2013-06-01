@@ -15,11 +15,11 @@ build:
           sudo apt-get upgrade -qq
           sudo apt-get install libssl0.9.8
           sudo apt-get install riak -qq
-    - script:
-        name: switch to eleveld backend
-        code: |-
-          sudo sed --in-place 's/riak_kv_bitcask_backend/riak_kv_eleveld_backend/g' /etc/riak/app.config
-          echo -e "changed app.config to:\n\n$(cat /etc/riak/app.config)"
+    # - script:
+    #     name: switch to eleveld backend
+    #     code: |-
+    #       sudo sed --in-place 's/riak_kv_bitcask_backend/riak_kv_eleveld_backend/g' /etc/riak/app.config
+    #       echo -e "changed app.config to:\n\n$(cat /etc/riak/app.config)"
     - script:
         name: start riak
         code: |-
