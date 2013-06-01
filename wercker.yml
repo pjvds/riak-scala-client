@@ -24,11 +24,10 @@ build:
         name: start riak
         code: |-
           export WAIT_FOR_ERLANG=60
-          sudo -i
-          ulimit -SHn 65535
-          riak start
+          sudo riak start
     - script:
         name: test
         code: |-
           cd $WERCKER_SOURCE_DIR
+          echo -e "directory content:\n$(ls -n)"
           sbt test
